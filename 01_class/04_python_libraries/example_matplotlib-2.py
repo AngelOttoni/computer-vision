@@ -1,6 +1,9 @@
 import matplotlib.pyplot as plt
+import os
 
-A = plt.imread('../example_images/serro.bmp')
+image_path = os.path.join(os.path.dirname(__file__), '..', '..', 'utils', 'example_images', 'serro.bmp')
+
+A = plt.imread(image_path)
 plt.imshow(A)
 plt.title("Imagem exibida com plt.imread()")
 plt.axis('on')
