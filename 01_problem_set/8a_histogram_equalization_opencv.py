@@ -1,10 +1,13 @@
-import cv2
+import cv2 as cv
 import matplotlib.pyplot as plt 
 import os
 
 image_path = os.path.join(os.path.dirname(__file__), '..', 'utils', 'example_images', 'livro.png')
 
-original_image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
+original_image = cv.imread(image_path, cv.IMREAD_GRAYSCALE)
+
+if original_image is None:
+    raise FileNotFoundError(f"Não foi possível carregar a imagem: {image_path}")
 
 plt.figure(figsize=(10,4))
 plt.subplot(1,2,1)
@@ -21,7 +24,7 @@ plt.tight_layout()
 plt.show()
 
 
-equalized_image = cv2.equalizeHist(original_image)
+equalized_image = cv.equalizeHist(original_image)
 
 plt.figure(figsize=(10,4))
 plt.subplot(1,2,1)
