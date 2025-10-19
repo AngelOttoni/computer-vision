@@ -1,3 +1,9 @@
+# Files
+01_problem_set/8b_select_perspective_points_test.py
+01_problem_set/8b_test.py
+01_problem_set/Lista2025.pdf
+utils/example_images/saida-0.png
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
