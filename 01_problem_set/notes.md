@@ -5,3 +5,6 @@
 
 ## Questão 8, Item b:
 Slide 148 - VISAO2025f.pdf
+
+## Questão 8, Item d:
+Slide 153 - VISAO2025f.pdf
