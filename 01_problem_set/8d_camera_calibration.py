@@ -9,10 +9,12 @@ import os
 
 # ------------------ CONFIGURAÇÕES ------------------
 pattern_size = (9, 6)  # (cols, rows) cantos internos
-square_size = 25.0 # mm
+square_size = 24.0 # mm
 criteria = (cv.TERM_CRITERIA_EPS + cv.TERM_CRITERIA_MAX_ITER, 30, 1e-3)
 flags_cb = (
-    cv.CALIB_CB_ADAPTIVE_THRESH + cv.CALIB_CB_NORMALIZE_IMAGE + cv.CALIB_CB_FAST_CHECK
+    cv.CALIB_CB_ADAPTIVE_THRESH 
+    + cv.CALIB_CB_NORMALIZE_IMAGE 
+    + cv.CALIB_CB_FAST_CHECK
 )
 
 # Caminho absoluto da pasta "results/"
