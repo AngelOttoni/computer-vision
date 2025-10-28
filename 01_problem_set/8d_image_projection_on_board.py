@@ -18,7 +18,7 @@ OVERLAY_IMAGE_PATH = os.path.join(
 )  # 01_problem_set/assets/lupita.jpg
 
 PATTERN_SIZE = (9, 6)  # cantos internos do tabuleiro
-SQUARE_SIZE = 25.0  # tamanho do quadrado (mm)
+SQUARE_SIZE = 24.0  # tamanho do quadrado (mm)
 RECORD_FPS = 30.0
 
 
@@ -151,7 +151,7 @@ while True:
             print(f"[i] Gravando vídeo em: {out_name}")
         writer.write(view)
 
-    # exibição (espelhar só a visualização, se preferir)
+    # Exibição
     cv.imshow("8d - Projecao de Imagem no Tabuleiro", cv.flip(view, 1))
     k = cv.waitKey(1) & 0xFF
     if k == ord('q'):
