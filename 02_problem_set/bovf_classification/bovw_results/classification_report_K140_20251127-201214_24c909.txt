@@ -1,0 +1,19 @@
+RUN_ID: 20251127-201214_24c909
+best_K: 140
+accuracy: 0.716667
+
+confusion_matrix:
+[[14  4  2]
+ [ 4 14  2]
+ [ 1  4 15]]
+
+classification_report:
+              precision    recall  f1-score   support
+
+        cars     0.7368    0.7000    0.7179        20
+      people     0.6364    0.7000    0.6667        20
+        tree     0.7895    0.7500    0.7692        20
+
+    accuracy                         0.7167        60
+   macro avg     0.7209    0.7167    0.7179        60
+weighted avg     0.7209    0.7167    0.7179        60
